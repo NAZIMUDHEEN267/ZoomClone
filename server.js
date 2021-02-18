@@ -7,11 +7,12 @@ const app = express();
 
 const server = require('http').Server(app)
 
+app.set('view engine','ejs');
 
 // root path 
 
 app.get('/',(req,res)=>{
-    res.status(200).send('hello my name is nazim')
+    res.render('room');
 })
 
 
