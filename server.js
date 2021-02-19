@@ -11,6 +11,7 @@ const server = require('http').Server(app)
 // specifying what engine using
 
 app.set('view engine','ejs');
+app.use(express.static('public'));
 
 
 
